@@ -1,10 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package manejoclases01;
 
+// Luis Mora
 
 public class Ejecutable {
     public static void main(String[] args) {
@@ -21,5 +18,13 @@ public class Ejecutable {
                 hospital.numeroCamas, hospital.presupuesto);
         
         // System.out.println(hospital.nombre + "-" + hospital.numeroCamas);
+        
+        Hospital hospitalCuenca = new Hospital();
+        hospitalCuenca.nombre = "Santa Ana";
+        hospitalCuenca.numeroCamas = 356;
+        hospitalCuenca.presupuesto = 589000.33;
+        
+        System.out.printf("%s - %d - %.2f\n", hospitalCuenca.nombre,
+                hospitalCuenca.numeroCamas, hospitalCuenca.presupuesto);
     }
 }
